@@ -40,19 +40,19 @@
 /* 1. TEMPLATE BACKGROUNDS */
 /* 1.1. works IMG gallery carousel IMG BACKGROUND */
 .works-page-carousel-item-1 {	
-background-image: url(../img/works/works-page-img-carousel-item-1.png);
+background-image: url(../img/Soteria/Lampy%20Soteria%20RGB.png);
 }
 
 .works-page-carousel-item-2 {
-background-image: url(../img/works/works-page-img-carousel-item-2.png);
+background-image: url(../img/Soteria/Realizacje/2-_DSC2396.jpg);
 }
 
 .works-page-carousel-item-3 {
-background-image: url(../img/works/works-page-img-carousel-item-3.png);
+background-image: url(../img/Soteria/Realizacje/5-_DSC2401.jpg);
 }
 
 .works-page-carousel-item-4 {
-background-image: url(../img/works/works-page-img-carousel-item-4.png);
+background-image: url(../img/Soteria/Realizacje/7-_DSC2406.jpg);
 }
 
 
@@ -507,6 +507,14 @@ color: #fff;
 text-transform: uppercase;
 }
 
+h1.section-header i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    font-size: 1.2em;
+    color: #369ad6;
+}
+
 h1.section-header {
 font-family: 'Oswald', sans-serif;
 font-style: normal;
@@ -627,14 +635,80 @@ z-index: 5;
 .works-page-carousel-item {
 position: relative;
 width: 100%;
-height: 35vh; height: 350px;
+height: 45vh; min-height: 400px;
 background-position: center center;
 background-repeat: no-repeat;
--webkit-background-size: cover;
-   -moz-background-size: cover;
-    -ms-background-size: cover;
-     -o-background-size: cover;
-        background-size: cover;
+-webkit-background-size: contain;
+   -moz-background-size: contain;
+    -ms-background-size: contain;
+     -o-background-size: contain;
+        background-size: contain;
+}
+
+/* SOTERIA CUSTOM GALLERY GRID */
+.soteria-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 995px) {
+    .soteria-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .soteria-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+.soteria-gallery .gallery-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+.soteria-gallery .gallery-item::before {
+    content: "";
+    display: block;
+    padding-top: 100%; /* 1:1 Aspect ratio (Square) */
+}
+
+.soteria-gallery .gallery-item .item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease;
+}
+
+.soteria-gallery .gallery-item .item-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.soteria-gallery .gallery-item:hover .item-img {
+    transform: scale(1.08); /* Zoom effect on hover */
+}
+
+.soteria-gallery .gallery-item:hover .item-shade {
+    opacity: 1; /* Darken slightly on hover */
 }
 
 .description {
@@ -760,6 +834,11 @@ filter: alpha(opacity=0);
 
 
 /* 6. hero center container */
+.hero-center-container-left .contact-form-submit-wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+
 .hero-center-container-left {
 position: relative;
 margin: 0 50px 0 0;
@@ -895,6 +974,9 @@ width: 260px;
 
 .the-button {
 position: relative;
+display: inline-flex;
+align-items: center;
+justify-content: center;
 font-size: 10px;
 font-weight: 700;
 text-transform: uppercase;
@@ -902,8 +984,10 @@ text-decoration: none;
 letter-spacing: 0.10em;
 color: #fff;
 background: none;
-padding: 10px 40px 0 40px;
+padding: 0 40px;
 margin-top: 10px;
+height: 38px;
+white-space: nowrap;
 -webkit-border-radius: 0;
    -moz-border-radius: 0;
     -ms-border-radius: 0;
@@ -915,6 +999,7 @@ margin-top: 10px;
   .the-button {
     font-size: 12px;
     letter-spacing: 0.25em;
+    height: 47px;
   }
 }
 
@@ -922,6 +1007,7 @@ margin-top: 10px;
   .the-button {
     font-size: 10px;
 	letter-spacing: 0.10em;
+    height: 38px;
   }
 }
 
@@ -998,7 +1084,8 @@ border-left: none;
 }
 
 .the-button-submit {
-width: 165px;
+width: 100%;
+max-width: 165px;
 top: -19px;
 border: none;
 }
@@ -1759,6 +1846,8 @@ height: 100vh;
 overflow-x: hidden;
 overflow-y: auto;
 }
+
+
 
 .ms-section {
 position: relative;
@@ -2597,3 +2686,188 @@ height: 25px;
 .inner-divider-xs {
 height: 15px;
 }
+
+/* 23. before/after slider */
+/* usunięto before/after, zastąpione tabelą porównawczą */
+
+/* 24. comparison table */
+.comparison-wrapper {
+position: relative;
+width: 100%;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+.comparison-wrapper-modal { 
+    max-width: 1100px; 
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #369ad6;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Magnific Popup modal styles */
+#compare-modal {
+    position: relative;
+    display: block;
+    width: auto;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+/* Ensure modal is properly positioned */
+.mfp-content #compare-modal {
+    position: static;
+}
+
+/* 24. Modern Features Styles */
+
+/* Particles.js */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#particles-js canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Fade-in animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Enhanced tooltips */
+[data-tip] {
+    position: relative;
+    cursor: help;
+}
+
+[data-tip]:hover::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+[data-tip]:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.compare-table {
+display: table;
+width: 100%;
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+.compare-row { display: table-row; }
+.compare-cell {
+display: table-cell;
+padding: 12px 14px;
+border-top: 1px solid rgba(255,255,255,.15);
+border-bottom: 1px solid rgba(255,255,255,.05);
+vertical-align: middle;
+}
+
+.compare-head .compare-cell {
+font-family: 'Oswald', sans-serif;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: .05em;
+background: rgba(0,0,0,.35);
+}
+
+.compare-param { text-align: left; width: 42%; }
+.compare-aurora { text-align: center; }
+.compare-standard { text-align: center; }
+
+.compare-cell.better {
+color: #369ad6;
+}
+.compare-cell.worse {
+color: rgba(255,255,255,.65);
+}
+
+.compare-note {
+margin: 10px auto 0 auto;
+font-size: 12px;
+opacity: .8;
+}
+
+@media only screen and (max-width: 640px) {
+  .compare-param { width: 40%; }
+  .compare-cell { padding: 10px 10px; }
+}
+
+/* Compare toggle */
+.compare-toggle { text-align: center; }
+.compare-toggle .the-button { border-color: #fff; }
+
+/* Tooltip minimal (no deps) */
+.has-tip { position: relative; cursor: help; border-bottom: 1px dotted rgba(255,255,255,.6); }
+.has-tip:after {
+content: attr(data-tip);
+position: absolute;
+left: 50%; bottom: 140%;
+transform: translateX(-50%);
+background: rgba(0,0,0,.85);
+color: #fff;
+padding: 6px 10px;
+border-radius: 4px;
+font-size: 11px;
+line-height: 1.4;
+white-space: nowrap;
+opacity: 0;
+pointer-events: none;
+transition: opacity .2s ease;
+z-index: 20;
+}
+.has-tip:before {
+content: "";
+position: absolute;
+left: 50%; bottom: 130%;
+transform: translateX(-50%);
+border: 6px solid transparent;
+border-top-color: rgba(0,0,0,.85);
+opacity: 0; transition: opacity .2s ease;
+}
+.has-tip:hover:after, .has-tip:hover:before { opacity: 1; }
