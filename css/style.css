@@ -750,7 +750,8 @@ h4.post-all-heading span {
 /* SOTERIA CUSTOM GALLERY GRID */
 .soteria-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: dense;
   grid-gap: 15px;
   width: 100%;
   margin-top: 30px;
@@ -758,13 +759,13 @@ h4.post-all-heading span {
 
 @media only screen and (max-width: 995px) {
   .soteria-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media only screen and (max-width: 768px) {
   .soteria-gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -772,16 +773,31 @@ h4.post-all-heading span {
   position: relative;
   display: block;
   width: 100%;
+  height: 100%;
   overflow: hidden;
   border-radius: 4px;
   transition: all 0.4s ease;
+  aspect-ratio: 1 / 1;
 }
 
-.soteria-gallery .gallery-item::before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-  /* 1:1 Aspect ratio (Square) */
+.soteria-gallery .gallery-item.main {
+  grid-column: 1 / -1;
+  grid-row: auto;
+  aspect-ratio: 4 / 3;
+}
+
+@media only screen and (max-width: 995px) {
+  .soteria-gallery .gallery-item.main {
+    grid-column: 1 / -1;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .soteria-gallery .gallery-item.main {
+    grid-column: 1 / -1;
+    aspect-ratio: 3 / 2;
+  }
 }
 
 .soteria-gallery .gallery-item .item-img {
@@ -3066,4 +3082,27 @@ a.link-nav:hover .multiscroll-tooltip {
 .has-tip:hover:after,
 .has-tip:hover:before {
   opacity: 1;
+}
+
+/* 25. SOTERIA LED GLOW ANIMATION */
+@keyframes soteriaGlow {
+  0% {
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.6));
+  }
+
+  33% {
+    filter: drop-shadow(0 0 25px rgba(0, 255, 0, 0.6));
+  }
+
+  66% {
+    filter: drop-shadow(0 0 15px rgba(0, 100, 255, 0.6));
+  }
+
+  100% {
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.6));
+  }
+}
+
+#left-bg-1 .vegas-slide-inner {
+  animation: soteriaGlow 8s infinite alternate ease-in-out;
 }

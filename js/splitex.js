@@ -125,6 +125,7 @@ $(function () {
         align: 'center',
         valign: 'right',
         transition: 'slideUp',
+        animation: 'kenburns',
         slides: [{
             src: "img/Soteria/Lampy%20Soteria%20RGB.png"
         }]
@@ -168,15 +169,16 @@ $(function () {
 
     // 5. owlCarousel
     $(".about-slider, #works-page-img-carousel").owlCarousel({
-        loop: false,
+        loop: true,
         center: false,
         items: 1,
         margin: 20,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 1000,
         autoplayTimeout: 5000,
         smartSpeed: 450,
-        nav: true,
+        nav: false,
+        dots: true,
         navText: ["<i class='owl-custom ion-chevron-left'></i>", "<i class='owl-custom ion-chevron-right'></i>"],
         responsive: {
             0: {
