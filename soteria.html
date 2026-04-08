@@ -313,9 +313,45 @@
 
     </div><!-- /product-page -->
 
-    <!-- FOOTER — identyczny jak index.html -->
+    <!-- FOOTER -->
     <footer class="brand-footer">
-        <p>© 2026 D-Tech Systems · CEZAB Distribution Sp. z o.o. · Wszelkie prawa zastrzeżone</p>
+        <div class="brand-footer-grid">
+            <div class="brand-footer-brand">
+                <img src="D-Tech Grey Logo.png" alt="D-Tech Systems Logo">
+                <p>Polska marka zaawansowanych rozwiązań przemysłowych. Projektujemy i produkujemy z myślą o najtrudniejszych warunkach pracy.</p>
+            </div>
+            <div class="brand-footer-col">
+                <h4>Produkty</h4>
+                <ul>
+                    <li><a href="soteria.html">Lampa Soteria</a></li>
+                    <li><a href="chronos.html">System Chronos</a></li>
+                    <li><a href="radar-capture.html">Radar Capture</a></li>
+                </ul>
+            </div>
+            <div class="brand-footer-col">
+                <h4>Kontakt</h4>
+                <div class="footer-contact-item">
+                    <i class="ion-ios-location-outline"></i>
+                    <span>ul. Wrocławska 69<br>63-400 Ostrów Wlkp</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="ion-ios-telephone-outline"></i>
+                    <span><a href="tel:+48627205430">+48 62 720 54 30</a></span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="ion-ios-email-outline"></i>
+                    <span><a href="mailto:biuro@cezab-distribution.pl">biuro@cezab-distribution.pl</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="brand-footer-bottom">
+            <p>&copy; 2026 D-Tech Systems &middot; CEZAB Distribution Sp. z o.o. &middot; Wszelkie prawa zastrzeżone</p>
+            <div class="brand-footer-socials">
+                <a href="https://www.facebook.com/cezabdistribution" class="ion-social-facebook" title="Facebook"></a>
+                <a href="https://www.youtube.com/@CEZAB-Distribution" class="ion-social-youtube" title="YouTube"></a>
+                <a href="https://www.linkedin.com/company/cezab-distribution" class="ion-social-linkedin" title="LinkedIn"></a>
+            </div>
+        </div>
     </footer>
 
     <!-- Scroll to Top -->
@@ -378,6 +414,23 @@
             } else {
                 $('.brand-nav').removeClass('scrolled');
             }
+        });
+
+        // Scrollspy – highlight active nav link
+        var sections = ['about', 'highlights', 'specs', 'gallery', 'contact'];
+        $(window).on('scroll', function() {
+            var scrollPos = $(window).scrollTop() + 100;
+            sections.forEach(function(id) {
+                var el = $('#' + id);
+                if (el.length) {
+                    var top = el.offset().top;
+                    var bottom = top + el.outerHeight();
+                    if (scrollPos >= top && scrollPos < bottom) {
+                        $('.brand-nav-menu li a').removeClass('nav-active');
+                        $('.brand-nav-menu li a[href="#' + id + '"]').addClass('nav-active');
+                    }
+                }
+            });
         });
 
         // Scroll to top button
