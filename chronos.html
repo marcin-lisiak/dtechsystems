@@ -1,256 +1,421 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="utf-8">
-        <title>System CHRONOS | D-Tech Systems</title>
-        <link rel="icon" type="image/png" href="by%20D.png">
-        <meta content="System CHRONOS – zaawansowane rozwiązania D-Tech Systems." name="description">
-        <meta content="D-TECH Systems" name="author">
-        <meta content="CHRONOS, system zarządzania, automatyka przemysłowa, D-Tech" name="keywords">
-        <meta content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<head>
+    <meta charset="utf-8">
+    <title>Centrala integracyjna CHRONOS | D-Tech Systems</title>
+    <link rel="icon" type="image/png" href="by%20D.png">
+    <meta content="CAPTURE to radarowy czujnik ruchu 24 GHz do bram przemysłowych. Precyzyjna detekcja osób i pojazdów, konfiguracja przez aplikację, montaż na wysokości 2–10 m. IP65." name="description">
+    <meta content="D-Tech Systems" name="author">
+    <meta content="radar, czujnik ruchu, CAPTURE, bramy przemysłowe, detekcja radarowa, 24 GHz, Doppler, czujnik otwarcia bramy, IP65" name="keywords">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css">
-        <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7COswald:300,400,700" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <!-- preloader start -->
-        <div class="preloader-bg"></div>
-        <div id="preloader">
-            <div id="preloader-status">
-                <div class="preloader-position loader"><span></span></div>
+    <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/soteria.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/radar-capture.css" media="all" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7COswald:300,400,700" rel="stylesheet" type="text/css">
+</head>
+<body class="brand-home radar-page">
+
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"><span></span></div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="brand-nav" id="brand-nav">
+        <div class="brand-nav-container">
+            <a href="index.html" class="brand-nav-logo">
+                <img src="D-Tech Grey Logo.png" alt="D-Tech Logo" style="height: 40px; width: auto; vertical-align: middle; margin-right: 10px;">
+            </a>
+            <ul class="brand-nav-menu">
+                <li><a href="#about">O produkcie</a></li>
+                <li><a href="#highlights">Zalety</a></li>
+                <li><a href="#specs">Specyfikacja</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="index.html" style="color: #369ad6;">← D-Tech</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="product-header">
+        <div class="product-header-bg"></div>
+        <div class="product-header-overlay"></div>
+        <div class="product-header-content">
+            <div class="product-header-tag">Radarowy czujnik ruchu 24 GHz</div>
+            <h1>Radar<span>CAPTURE</span></h1>
+            <p class="product-header-sub">Precyzyjny czujnik radarowy Doppler do detekcji ruchu<br>przy bramach i drzwiach przemysłowych</p>
+            <div class="product-header-actions">
+                <a href="#about" class="the-button the-button-contact"><span>O produkcie</span></a>
+                <a href="Broszura_Radar_Capture_PL.pdf" target="_blank" class="the-button the-button-contact"><span>Pobierz Kartę PDF</span></a>
             </div>
-        </div><!-- preloader end -->
+        </div>
+    </header>
 
-        <div class="border-top top-position"></div>
-        <div class="border-left left-position"></div>
-        <div class="border-middle-left fade-position"></div>
-        <div class="border-middle-right fade-position"></div>
-        <div class="border-right right-position"></div>
-        <div class="border-bottom bottom-position"></div>
+    <!-- BREADCRUMB -->
+    <div class="product-breadcrumb">
+        <div class="product-breadcrumb-inner">
+            <a href="index.html">D-Tech</a>
+            <span class="sep">›</span>
+            <a href="index.html#products">Produkty</a>
+            <span class="sep">›</span>
+            <span class="current">Radar CAPTURE</span>
+        </div>
+    </div>
 
-        <!-- back to brand link -->
-        <a href="index.html" class="back-to-brand" title="Powrót do D-Tech">
-            <span class="ion-chevron-left"></span> D-Tech
-        </a>
+    <!-- ======== CONTENT ======== -->
+    <div class="product-page">
 
-        <!-- multiScroll start -->
-        <div id="ms-wrapper">
-            <!-- menu button start -->
-            <div class="menu-btn open-menu-content right-position">
-                <span></span> <span></span> <span></span>
-            </div>
-            <!-- menu container left -->
-            <div class="menu-container-left">
-                <div class="full-screen-wrapper">
-                    <a class="template-image menu-bg-img" data-caption="." data-image="img/menu/menu-bg.png" data-title="Chronos" href="#"><span class="fullscreen icon-resize-enlarge"></span></a>
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="prod-section">
+                <div class="p-fade">
+                    <div class="prod-label">01. O produkcie</div>
+                    <h2 class="post-title" style="text-align:left;">Dlaczego <span style="-webkit-text-stroke:1px #369ad6; text-stroke:1px #369ad6; color:transparent;">CAPTURE?</span></h2>
+                    <div class="brand-section-line" style="margin: 20px 0 0 0;"></div>
                 </div>
-                <div class="menu-overlay overlay overlay-all overlay-dark-75 cover-all"></div>
-                <div class="menu-bg"></div>
-            </div>
-            <!-- menu container right -->
-            <div class="menu-container-right">
-                <div class="box-table">
-                    <div class="box-cell">
-                        <nav>
-                            <ul class="main-menu">
-                                <li data-menuanchor="home">
-                                    <a class="menu-item hvr-shutter-out-horizontal active" href="#home">Start</a>
-                                </li>
-                                <li data-menuanchor="contact">
-                                    <a class="menu-item hvr-shutter-out-horizontal" href="#contact">Kontakt</a>
-                                </li>
-                                <li>
-                                    <a class="menu-item hvr-shutter-out-horizontal" href="index.html">← D-Tech</a>
-                                </li>
-                            </ul>
-                        </nav>
+                <div class="prod-intro-grid">
+                    <div class="prod-intro-text p-fade p-d1">
+                        <p>CAPTURE to zaawansowany radarowy czujnik ruchu oparty na technologii Doppler 24 GHz, zaprojektowany specjalnie do pracy z bramami i drzwiami przemysłowymi.</p>
+                        <p>Dzięki precyzyjnym algorytmom detekcji, CAPTURE rozróżnia osoby od pojazdów, filtruje ruch równoległy i zapewnia niezawodne działanie nawet w trudnych warunkach — od mrozu po upał, od kurzu po deszcz.</p>
+                        <p>System kardanowego mocowania umożliwia łatwy montaż na wysokości od 2 do 10 metrów, a konfiguracja odbywa się wygodnie przez dedykowaną aplikację mobilną.</p>
+                        <div style="margin-top: 28px;">
+                            <a href="Broszura_Radar_Capture_PL.pdf" target="_blank" class="the-button the-button-contact"><span>Pobierz Kartę PDF</span></a>
+                        </div>
+                    </div>
+                    <div class="prod-features p-fade p-d2">
+                        <div class="prod-feat">
+                            <i class="ion-ios-pulse"></i>
+                            <div class="prod-feat-name">Technologia<br>Doppler 24 GHz</div>
+                            <p class="prod-feat-desc">Precyzyjne wykrywanie ruchu z minimalną prędkością detekcji 5 cm/s</p>
+                        </div>
+                        <div class="prod-feat">
+                            <i class="ion-ios-people-outline"></i>
+                            <div class="prod-feat-name">Rozróżnianie<br>obiektów</div>
+                            <p class="prod-feat-desc">Selektywna detekcja osób i pojazdów z filtrem ruchu równoległego</p>
+                        </div>
+                        <div class="prod-feat">
+                            <i class="ion-ios-navigate-outline"></i>
+                            <div class="prod-feat-name">Montaż<br>2–10 metrów</div>
+                            <p class="prod-feat-desc">Elastyczny montaż z systemem kardanowym do precyzyjnej regulacji</p>
+                        </div>
+                        <div class="prod-feat">
+                            <i class="ion-ios-settings"></i>
+                            <div class="prod-feat-name">Konfiguracja<br>przez aplikację</div>
+                            <p class="prod-feat-desc">Intuicyjna aplikacja mobilna do ustawiania czułości, zasięgu i trybu detekcji</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- left side -->
-            <div class="ms-left animated">
-                <!-- left 1: Hero -->
-                <div class="ms-section active" id="left-1">
-                    <a class="logo left-position"><div class="logo-img"></div></a>
-                    <div class="overlay overlay-all overlay-dark-75 cover-all" id="left-bg-1"></div>
-                    <div class="content-wrapper">
-                        <div class="hero-center-container-left right-position">
-                            <div class="social-icons">
-                                <ul>
-                                    <li><a class="ion-social-facebook" href="https://www.facebook.com/cezabdistribution"><span>Facebook</span></a></li>
-                                    <li><a class="ion-social-youtube" href="https://www.youtube.com/@CEZAB-Distribution"><span>YouTube</span></a></li>
-                                    <li><a class="ion-social-linkedin" href="https://www.linkedin.com/company/cezab-distribution"><span>LinkedIn</span></a></li>
-                                </ul>
-                            </div>
-                            <div class="inner-divider-half"></div>
-                            <h1 class="hero-heading">
-                                <i class="hero-heading-xs">System</i><br>
-                                <span>CHRONOS</span>
-                            </h1>
-                            <div class="inner-divider-half"></div>
-                            <h2>Zaawansowany system zarządzania<br>procesami logistycznymi</h2>
-                            <div class="inner-divider-large"></div>
+        <div class="prod-section-divider"></div>
+
+        <!-- HIGHLIGHTS -->
+        <section id="highlights">
+            <div class="prod-section">
+                <div class="p-fade">
+                    <div class="prod-label">02. Zastosowanie</div>
+                    <h2 class="post-title" style="text-align:left;">Kluczowe <span style="-webkit-text-stroke:1px #369ad6; text-stroke:1px #369ad6; color:transparent;">Zalety</span></h2>
+                    <div class="brand-section-line" style="margin: 20px 0 0 0;"></div>
+                </div>
+                <div class="prod-hl-grid">
+                    <div class="prod-hl-card p-fade p-d1" data-num="01">
+                        <div class="prod-hl-num">01</div>
+                        <div class="prod-hl-sub">Detekcja radarowa</div>
+                        <div class="prod-hl-title">Wykrywanie <span>w każdych warunkach</span></div>
+                        <p class="prod-hl-body">Technologia radarowa Doppler działa niezależnie od oświetlenia, temperatury (-30°C do +60°C), kurzu i opadów — tam, gdzie tradycyjne czujniki zawodzą.</p>
+                    </div>
+                    <div class="prod-hl-card p-fade p-d2" data-num="02">
+                        <div class="prod-hl-num">02</div>
+                        <div class="prod-hl-sub">Inteligentna selekcja</div>
+                        <div class="prod-hl-title"><span>Filtracja</span> ruchu</div>
+                        <p class="prod-hl-body">CAPTURE rozróżnia osoby od pojazdów i filtruje ruch równoległy — otwierając bramę tylko wtedy, gdy jest to faktycznie potrzebne.</p>
+                    </div>
+                    <div class="prod-hl-card p-fade p-d3" data-num="03">
+                        <div class="prod-hl-num">03</div>
+                        <div class="prod-hl-sub">Szybki montaż</div>
+                        <div class="prod-hl-title">System <span>Kardanowy</span></div>
+                        <p class="prod-hl-body">Innowacyjny gimbal umożliwia montaż na różnych powierzchniach z precyzyjną regulacją kątów — pionowo 0°–45°, poziomo ±30°.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="prod-section-divider"></div>
+
+        <!-- SPECS -->
+        <section id="specs">
+            <div class="prod-section">
+                <div class="p-fade">
+                    <div class="prod-label">03. Specyfikacja</div>
+                    <h2 class="post-title" style="text-align:left;">Dane <span style="-webkit-text-stroke:1px #369ad6; text-stroke:1px #369ad6; color:transparent;">Techniczne</span></h2>
+                    <div class="brand-section-line" style="margin: 20px 0 0 0;"></div>
+                </div>
+                <table class="prod-spec-table p-fade p-d1">
+                    <tr>
+                        <td>Technologia</td>
+                        <td>Radar Doppler mikrofalowy</td>
+                    </tr>
+                    <tr>
+                        <td>Częstotliwość</td>
+                        <td>24,150 GHz</td>
+                    </tr>
+                    <tr>
+                        <td>Moc emisji</td>
+                        <td>&lt; 20 dBm EIRP</td>
+                    </tr>
+                    <tr>
+                        <td>Pole detekcji</td>
+                        <td>34° × 80°</td>
+                    </tr>
+                    <tr>
+                        <td>Min. prędkość detekcji</td>
+                        <td>5 cm/s</td>
+                    </tr>
+                    <tr>
+                        <td>Zasilanie</td>
+                        <td>12/24 V AC/DC</td>
+                    </tr>
+                    <tr>
+                        <td>Pobór mocy</td>
+                        <td>&lt; 2 W</td>
+                    </tr>
+                    <tr>
+                        <td>Wyjścia</td>
+                        <td>2 wyjścia, konfiguracja NO/NC</td>
+                    </tr>
+                    <tr>
+                        <td>Wysokość montażu</td>
+                        <td>2 – 10 m</td>
+                    </tr>
+                    <tr>
+                        <td>Kąt nachylenia</td>
+                        <td>Pionowo: 0°–45° · Poziomo: ±30°</td>
+                    </tr>
+                    <tr>
+                        <td>Materiał</td>
+                        <td>ADA + poliwęglan</td>
+                    </tr>
+                    <tr>
+                        <td>Waga</td>
+                        <td>240 g (bez kabla) / 637 g (z kablem 10 m)</td>
+                    </tr>
+                    <tr>
+                        <td>Klasa ochrony</td>
+                        <td>IP65</td>
+                    </tr>
+                    <tr>
+                        <td>Temp. pracy</td>
+                        <td>-30 °C do +60 °C</td>
+                    </tr>
+                    <tr>
+                        <td>Zastosowanie</td>
+                        <td>Bramy segmentowe, przesuwne, szybkobieżne, chłodnicze, składane, pakujące</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <div class="prod-section-divider"></div>
+
+        <!-- GALLERY -->
+        <section id="gallery">
+            <div class="prod-section">
+                <div class="p-fade">
+                    <div class="prod-label">04. Galeria</div>
+                    <h2 class="post-title" style="text-align:left;">Zdjęcia <span style="-webkit-text-stroke:1px #369ad6; text-stroke:1px #369ad6; color:transparent;">Produktu</span></h2>
+                    <div class="brand-section-line" style="margin: 20px 0 0 0;"></div>
+                </div>
+                <div class="radar-gallery popup-photo-gallery p-fade p-d1">
+                    <a href="img/RadarCapture/galeria/Radar.jpg" class="gallery-item main">
+                        <div class="item-img" style="background-image: url('img/RadarCapture/galeria/Radar.jpg');"></div>
+                        <div class="item-shade"></div>
+                    </a>
+                    <a href="img/RadarCapture/galeria/Radar.png" class="gallery-item">
+                        <div class="item-img" style="background-image: url('img/RadarCapture/galeria/Radar.png');"></div>
+                        <div class="item-shade"></div>
+                    </a>
+                    <a href="img/RadarCapture/galeria/Brama%20z%20wi%C4%85zkami.jpg" class="gallery-item">
+                        <div class="item-img" style="background-image: url('img/RadarCapture/galeria/Brama%20z%20wi%C4%85zkami.jpg');"></div>
+                        <div class="item-shade"></div>
+                    </a>
+                    <a href="img/RadarCapture/galeria/Brama%20z%20wi%C4%85zk%C4%85.jpg" class="gallery-item">
+                        <div class="item-img" style="background-image: url('img/RadarCapture/galeria/Brama%20z%20wi%C4%85zk%C4%85.jpg');"></div>
+                        <div class="item-shade"></div>
+                    </a>
+                    <a href="img/RadarCapture/galeria/K%C4%85ty%201.png" class="gallery-item">
+                        <div class="item-img" style="background-image: url('img/RadarCapture/galeria/K%C4%85ty%201.png');"></div>
+                        <div class="item-shade"></div>
+                    </a>
+                    <a href="img/RadarCapture/galeria/K%C4%85ty%202.png" class="gallery-item">
+                        <div class="item-img" style="background-image: url('img/RadarCapture/galeria/K%C4%85ty%202.png');"></div>
+                        <div class="item-shade"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="prod-section-divider"></div>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="prod-section">
+                <div class="p-fade">
+                    <div class="prod-label">05. Kontakt</div>
+                    <h2 class="post-title" style="text-align:left;">Skontaktuj się <span style="-webkit-text-stroke:1px #369ad6; text-stroke:1px #369ad6; color:transparent;">z nami</span></h2>
+                    <div class="brand-section-line" style="margin: 20px 0 0 0;"></div>
+                </div>
+                <div class="prod-contact-wrap">
+                    <div class="prod-contact-info p-fade p-d1">
+                        <div>
+                            <div class="prod-contact-label">Firma</div>
+                            <div class="prod-contact-value">CEZAB Distribution Sp. z o.o.</div>
+                        </div>
+                        <div>
+                            <div class="prod-contact-label">Adres</div>
+                            <div class="prod-contact-value">ul. Wrocławska 69<br>63-400 Ostrów Wlkp.</div>
+                        </div>
+                        <div>
+                            <div class="prod-contact-label">Telefon</div>
+                            <div class="prod-contact-value"><a href="tel:+48627205430" style="color:inherit;">+48 62 720 54 30</a></div>
+                        </div>
+                        <div>
+                            <div class="prod-contact-label">Email</div>
+                            <div class="prod-contact-value"><a href="mailto:biuro@cezab-distribution.pl" style="color:#369ad6;">biuro@cezab-distribution.pl</a></div>
+                        </div>
+                        <div class="prod-social">
+                            <a href="https://www.facebook.com/cezabdistribution" class="ion-social-facebook" title="Facebook"></a>
+                            <a href="https://www.youtube.com/@CEZAB-Distribution" class="ion-social-youtube" title="YouTube"></a>
+                            <a href="https://www.linkedin.com/company/cezab-distribution" class="ion-social-linkedin" title="LinkedIn"></a>
                         </div>
                     </div>
-                </div><!-- left 1 end -->
-                <!-- left 2: Contact info -->
-                <div class="ms-section" id="left-2">
-                    <div class="overlay overlay-all overlay-dark-75 cover-all" id="contact-bg-left"></div>
-                    <div class="content-wrapper">
-                        <h2 class="post-title">Kontakt</h2>
-                        <div class="inner-divider-half"></div>
-                        <h2 class="section-heading"><span>01.</span> Skontaktuj się z nami</h2>
-                        <div class="sections">
-                            <div class="inner-divider-large"></div>
-                            <h1 class="section-header section-header-xs">CEZAB Distribution Sp. z o.o.</h1>
-                            <div class="inner-divider-half"></div>
-                            <h1 class="section-header section-header-xs">ul. Wrocławska 69, 63-400 Ostrów Wlkp</h1>
-                            <div class="inner-divider-half"></div>
-                            <h1 class="section-header section-header-xs"><span>+48 62 720 54 30</span></h1>
-                            <div class="inner-divider-half"></div>
-                            <h1 class="section-header section-header-xs">biuro@cezab-distribution.pl</h1>
+                    <div class="p-fade p-d2">
+                        <div class="brand-contact-form">
+                            <form action="contact.php" id="form" method="post" name="send">
+                                <input class="requiredField name" id="name" name="name" placeholder="Imię i nazwisko" type="text">
+                                <input class="requiredField email" id="email" name="email" placeholder="Email" type="text">
+                                <input class="requiredField subject" id="subject" name="subject" placeholder="Temat" type="text">
+                                <textarea class="requiredField message" id="message" name="message" placeholder="Wiadomość"></textarea>
+                                <div class="contact-form-submit-wrapper">
+                                    <button class="the-button the-button-contact the-button-submit" id="submit" type="submit"><span>Zapytaj o CAPTURE</span></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </div><!-- left 2 end -->
-            </div><!-- left side end -->
+                </div>
+            </div>
+        </section>
 
-            <!-- right side -->
-            <div class="ms-right animated" id="right-part">
-                <!-- right 1: Coming Soon -->
-                <div class="ms-section active" id="right-1">
-                    <div class="overlay overlay-all overlay-dark-75 cover-all" id="right-bg-1"></div>
-                    <div class="content-wrapper">
-                        <div class="hero-center-container-right left-position">
-                            <h2>System CHRONOS</h2>
-                            <div class="inner-divider-half"></div>
-                            <h1 class="hero-heading">
-                                <span>Wkrótce</span> dostępny
-                            </h1>
-                            <div class="inner-divider"></div>
-                            <p class="coming-soon-desc">
-                                Pracujemy nad pełną prezentacją produktu.<br>
-                                Skontaktuj się z nami, aby uzyskać więcej informacji.
-                            </p>
-                            <div class="inner-divider"></div>
-                            <div class="contact-form-submit-wrapper">
-                                <a href="#contact" class="the-button the-button-contact"><span>Zapytaj o CHRONOS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- right 1 end -->
-                <!-- right 2: Contact form -->
-                <div class="ms-section" id="right-2">
-                    <div class="overlay overlay-all overlay-dark-75 cover-all" id="contact-bg-right"></div>
-                    <div class="content-wrapper">
-                        <div class="sections">
-                            <h1 class="section-header section-header-xs">Zacznijmy już teraz</h1>
-                            <div class="inner-divider"></div>
-                            <div id="contact-form">
-                                <form action="contact.php" id="form" method="post" name="send">
-                                    <div class="col-sm-12 col-md-6 col-lg-6">
-                                        <input class="requiredField name" id="name" name="name" placeholder="Imię i nazwisko" type="text">
-                                    </div>
-                                    <div class="col-sm-12 col-md-6 col-lg-6">
-                                        <input class="requiredField email" id="email" name="email" placeholder="Email" type="text">
-                                    </div>
-                                    <div class="col-sm-12 col-md-12 col-lg-12">
-                                        <input class="requiredField subject" id="subject" name="subject" placeholder="Temat" type="text" value="Zapytanie o System CHRONOS">
-                                    </div>
-                                    <div class="make-space">
-                                        <textarea class="requiredField message" id="message" name="message" placeholder="Wiadomość"></textarea>
-                                    </div>
-                                    <div>
-                                        <div class="contact-form-submit-wrapper">
-                                            <button class="the-button the-button-contact the-button-submit" id="submit" type="submit"><span>Zapytaj o CHRONOS</span></button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- right 2 end -->
-            </div><!-- right side end -->
-        </div><!-- multiScroll end -->
+    </div><!-- /product-page -->
 
-        <script src="js/plugins.js"></script>
-        <script>
-        $(function () {
-            "use strict";
-            $(window).on("load", function () {
-                $("#preloader").fadeOut(1200);
-                $(".preloader-bg").delay(1000).fadeOut("slow");
-                setTimeout(function () { $(".ms-left, .ms-right").addClass("fadeIn"); }, 1000);
-                setTimeout(function () { $(".hero-center-container-right, .logo, .border-left").removeClass("left-position"); }, 1200);
-                setTimeout(function () { $(".hero-center-container-left, .menu-btn, .border-right").removeClass("right-position"); }, 1200);
-                setTimeout(function () { $(".border-top").removeClass("top-position"); }, 1200);
-                setTimeout(function () { $(".border-bottom").removeClass("bottom-position"); }, 1200);
-                setTimeout(function () { $(".border-middle-left, .border-middle-right").removeClass("fade-position"); }, 1400);
-            });
+    <!-- FOOTER -->
+    <footer class="brand-footer">
+        <p>© 2026 D-Tech Systems · CEZAB Distribution Sp. z o.o. · Wszelkie prawa zastrzeżone</p>
+    </footer>
 
-            // Background images
-            $("#left-bg-1").vegas({ cover: true, slides: [{ src: "img/background/bg-dark.jpg" }] });
-            $("#right-bg-1").vegas({ cover: true, slides: [{ src: "img/background/bg-dark.jpg" }] });
-            $("#contact-bg-left").vegas({ cover: true, slides: [{ src: "img/background/bg-dark.jpg" }] });
-            $("#contact-bg-right").vegas({ cover: true, slides: [{ src: "img/background/bg-dark.jpg" }] });
+    <!-- Scroll to Top -->
+    <a href="#" class="scroll-to-top" id="scrollTopBtn">
+        <span class="ion-chevron-up"></span>
+    </a>
 
-            // multiScroll
-            var onMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
-            $("#ms-wrapper").multiscroll({
-                anchors: ['home', 'contact'],
-                navigation: true,
-                navigationTooltips: ['Start', 'Kontakt'],
-                loopBottom: true,
-                loopTop: true
-            });
-            if (onMobile) { $("#ms-wrapper").multiscroll.destroy(); }
+    <script src="js/plugins.js"></script>
+    <script>
+    $(function () {
+        "use strict";
 
-            // menu
-            $(".menu-btn").on("click", function () { $(this).toggleClass("opened"); });
-            $(".main-menu li").on("click", function () { $(".menu-btn").removeClass("opened"); });
-            $(".open-menu-content, .main-menu li").on("click", function () {
-                $(".menu-overlay").delay(300).fadeIn(600);
-                $(".main-menu, .full-screen-wrapper").delay(250).fadeIn(500);
-                if ($(".menu-container-right, .menu-container-left").hasClass("open")) {
-                    $(".menu-container-right, .menu-container-left").removeClass("open").addClass("close");
-                    $(".menu-overlay, .main-menu, .full-screen-wrapper").fadeOut(100);
-                } else {
-                    $(".menu-container-right, .menu-container-left").removeClass("close").addClass("open");
-                }
-            });
-            $(".menu-item").on("click", function () { $(".menu-item").removeClass("active"); $(this).addClass("active"); });
-
-            var elements = document.querySelectorAll(".template-image");
-            Intense(elements);
-
-            // contact form
-            $("form#form").on("submit", function () {
-                $("form#form .error").remove();
-                var s = false;
-                $(".requiredField").each(function () {
-                    if ("" === jQuery.trim($(this).val())) {
-                        $(this).parent().append('<span class="error">To pole jest wymagane</span>');
-                        $(this).addClass("inputError"); s = true;
-                    } else if ($(this).hasClass("email")) {
-                        var r = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-                        if (!r.test(jQuery.trim($(this).val()))) {
-                            $(this).parent().append('<span class="error">Nieprawidłowy adres email</span>');
-                            $(this).addClass("inputError"); s = true;
-                        }
-                    }
-                });
-                if (!s) {
-                    var r = $(this).serialize();
-                    $.post($(this).attr("action"), r, function () {
-                        $("form#form").slideUp("fast", function () {
-                            $(this).before('<div class="success">Wiadomość została wysłana</div>');
-                        });
-                    });
-                }
-                return false;
-            });
+        // Preloader
+        $(window).on("load", function () {
+            $("#preloader").fadeOut(1200);
+            $(".preloader-bg").delay(1000).fadeOut("slow");
         });
-        </script>
-    </body>
+
+        // Smooth scroll
+        $('a[href^="#"]').on('click', function (e) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                e.preventDefault();
+                var offset = target.offset().top - 70;
+                $('html, body').animate({ scrollTop: offset }, 700, 'swing');
+            }
+        });
+
+        // Contact form
+        $("form#form").on("submit", function () {
+            $("form#form .error").remove();
+            var s = false;
+            $(".requiredField").each(function () {
+                if ("" === jQuery.trim($(this).val())) {
+                    $(this).parent().append('<span class="error">To pole jest wymagane</span>');
+                    $(this).addClass("inputError"); s = true;
+                } else if ($(this).hasClass("email")) {
+                    var r = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                    if (!r.test(jQuery.trim($(this).val()))) {
+                        $(this).parent().append('<span class="error">Nieprawidłowy adres email</span>');
+                        $(this).addClass("inputError"); s = true;
+                    }
+                }
+            });
+            if (!s) {
+                var r = $(this).serialize();
+                $.post($(this).attr("action"), r, function () {
+                    $("form#form").slideUp("fast", function () {
+                        $(this).before('<div class="success">Wiadomość została wysłana</div>');
+                    });
+                });
+            }
+            return false;
+        });
+
+        // Sticky nav
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() > 50) {
+                $('.brand-nav').addClass('scrolled');
+            } else {
+                $('.brand-nav').removeClass('scrolled');
+            }
+        });
+
+        // Scroll to top button
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() > 300) {
+                $('#scrollTopBtn').addClass('visible');
+            } else {
+                $('#scrollTopBtn').removeClass('visible');
+            }
+        });
+        $('#scrollTopBtn').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, 700, 'swing');
+        });
+
+        // Fade-in on scroll
+        function revealFades() {
+            var scrollTop = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            $('.p-fade').each(function () {
+                if ($(this).offset().top < scrollTop + windowHeight - 60) {
+                    $(this).addClass('visible');
+                }
+            });
+        }
+        $(window).on('scroll', revealFades);
+        revealFades();
+
+        // Gallery lightbox
+        if ($.fn.magnificPopup) {
+            $('.popup-photo-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: { enabled: true }
+            });
+        }
+    });
+    </script>
+</body>
 </html>

@@ -1,0 +1,40 @@
+/*
+  =====================================================
+  RADAR CAPTURE PRODUCT PAGE — css/radar-capture.css
+  Dodaj do radar-capture.html: <link href="css/radar-capture.css" rel="stylesheet">
+  =====================================================
+*/
+
+
+/* ──────────────────────────────────────────────────
+   NAV: na stronach produktowych zawsze ciemna
+   ────────────────────────────────────────────────── */
+.radar-page .brand-nav {
+    background-color: rgba(0, 0, 0, 0.92) !important;
+    padding: 16px 0 !important;
+}
+
+.radar-page .brand-nav.scrolled {
+    padding: 10px 0 !important;
+}
+
+
+/* ──────────────────────────────────────────────────
+   PAGE HEADER BANNER — tło radaru
+   ────────────────────────────────────────────────── */
+.radar-page .product-header-bg {
+    background-image: url('../img/RadarCapture/hero/Radar.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* ──────────────────────────────────────────────────
+   RADAR GALLERY (ta sama siatka co soteria-gallery)
+   ────────────────────────────────────────────────── */
+.radar-gallery {
+    margin-top: 50px;
+}
+
+
+/* End of file */
