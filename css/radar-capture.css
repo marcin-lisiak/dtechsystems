@@ -30,6 +30,114 @@
 
 
 /* ──────────────────────────────────────────────────
+   STORE BUTTONS (App Store / Google Play)
+   ────────────────────────────────────────────────── */
+.store-btns-wrapper {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.store-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fff !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    min-width: 170px;
+}
+
+.store-btn i {
+    font-size: 24px;
+    color: #369ad6;
+}
+
+.store-btn .btn-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.store-btn .btn-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.6;
+    line-height: 1;
+}
+
+.store-btn .btn-name {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.2;
+}
+
+.store-btn:hover {
+    background: #111;
+    border-color: #369ad6;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(54, 154, 214, 0.15);
+}
+
+/* ──────────────────────────────────────────────────
+   VIDEO SECTION CAUTION: Lightbox button
+   ────────────────────────────────────────────────── */
+.video-promo-container {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.video-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(54, 154, 214, 0.1);
+    color: #369ad6 !important;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    border: 1px solid rgba(54, 154, 214, 0.3);
+    transition: all 0.3s ease;
+}
+
+.video-btn i {
+    font-size: 20px;
+    background: #369ad6;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding-left: 4px; /* offset for play icon */
+}
+
+.video-btn:hover {
+    background: #369ad6;
+    color: #fff !important;
+    transform: scale(1.05);
+}
+
+.video-btn:hover i {
+    background: #fff;
+    color: #369ad6;
+}
+
+/* ──────────────────────────────────────────────────
    RADAR GALLERY (ta sama siatka co soteria-gallery)
    ────────────────────────────────────────────────── */
 .radar-gallery {

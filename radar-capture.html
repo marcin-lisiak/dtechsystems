@@ -54,10 +54,12 @@
                 <a href="#about" class="the-button the-button-contact"><span>O produkcie</span></a>
                 <a href="Broszura_Radar_Capture_PL.pdf" target="_blank" class="the-button the-button-contact"><span>Pobierz Kartę PDF</span></a>
             </div>
+            <!--
             <div style="margin-top: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
                 <a href="https://apps.apple.com/pl/app/capture-sensors/id6742403723?l=pl" target="_blank" class="the-button the-button-contact" style="background-color: transparent !important; border-color: rgba(255,255,255,0.4) !important; min-width: auto; padding: 10px 20px !important;"><span class="ion-social-apple" style="margin-right:8px; font-size:18px;"></span><span>App Store</span></a>
                 <a href="https://play.google.com/store/apps/details?id=it.startecautomazioni.capture_sensors&pli=1" target="_blank" class="the-button the-button-contact" style="background-color: transparent !important; border-color: rgba(255,255,255,0.4) !important; min-width: auto; padding: 10px 20px !important;"><span class="ion-social-android" style="margin-right:8px; font-size:18px;"></span><span>Google Play</span></a>
-            </div>
+            </div> 
+            -->
         </div>
     </header>
 
@@ -95,32 +97,51 @@
                             <li style="margin-bottom: 8px; padding-left: 20px; position: relative;"><i class="ion-ios-arrow-right" style="position: absolute; left: 0; top: 5px; color: #369ad6; font-size: 14px;"></i> odporność na zakłócenia, wykorzystanie technologii Doppler 24 GHz</li>
                             <li style="margin-bottom: 8px; padding-left: 20px; position: relative;"><i class="ion-ios-arrow-right" style="position: absolute; left: 0; top: 5px; color: #369ad6; font-size: 14px;"></i> uniwersalne zasilanie 12/24V AC/DC</li>
                         </ul>
-                        <div style="margin-top: 28px; display: flex; gap: 15px; flex-wrap: wrap;">
-                            <a href="https://apps.apple.com/pl/app/capture-sensors/id6742403723?l=pl" target="_blank" class="the-button the-button-contact" style="background-color: #369ad6 !important; border-color: #369ad6 !important; min-width: auto; padding: 12px 20px !important;"><span class="ion-social-apple" style="margin-right:8px; font-size:16px;"></span><span>App Store</span></a>
-                            <a href="https://play.google.com/store/apps/details?id=it.startecautomazioni.capture_sensors&pli=1" target="_blank" class="the-button the-button-contact" style="background-color: #369ad6 !important; border-color: #369ad6 !important; min-width: auto; padding: 12px 20px !important;"><span class="ion-social-android" style="margin-right:8px; font-size:16px;"></span><span>Google Play</span></a>
-                            <a href="Broszura_Radar_Capture_PL.pdf" target="_blank" class="the-button the-button-contact"><span>Pobierz Kartę PDF</span></a>
+                        <div class="store-btns-wrapper">
+                            <a href="https://apps.apple.com/pl/app/capture-sensors/id6742403723?l=pl" target="_blank" class="store-btn">
+                                <i class="ion-social-apple"></i>
+                                <div class="btn-text">
+                                    <span class="btn-label">Pobierz w</span>
+                                    <span class="btn-name">App Store</span>
+                                </div>
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=it.startecautomazioni.capture_sensors&pli=1" target="_blank" class="store-btn">
+                                <i class="ion-social-android"></i>
+                                <div class="btn-text">
+                                    <span class="btn-label">Pobierz w</span>
+                                    <span class="btn-name">Google Play</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="video-promo-container p-fade p-d3">
+                            <a href="https://www.youtube.com/watch?v=ln8uKARKQUc" data-lity class="video-btn">
+                                <i class="ion-play"></i>
+                                <span>ZOBACZ JAK TO DZIAŁA</span>
+                            </a>
+                            <a href="Broszura_Radar_Capture_PL.pdf" target="_blank" class="the-button the-button-contact" style="margin-left: 20px; vertical-align: middle;"><span>Pobierz Kartę PDF</span></a>
                         </div>
                     </div>
                     <div class="prod-features p-fade p-d2">
                         <div class="prod-feat">
-                            <i class="ion-ios-settings"></i>
-                            <div class="prod-feat-name">Aplikacja<br>Mobilna</div>
-                            <p class="prod-feat-desc">Bezkonkurencyjne sterowanie i konfiguracja ustawień prosto z Twojego smartfona App Store / Google Play</p>
-                        </div>
-                        <div class="prod-feat">
-                            <i class="ion-ios-navigate-outline"></i>
-                            <div class="prod-feat-name">Montaż<br>2–10 metrów</div>
-                            <p class="prod-feat-desc">Niezwykle elastyczny uchwyt daje pełną swobodę montażu: z lewej, z prawej lub na środku</p>
-                        </div>
-                        <div class="prod-feat">
                             <i class="ion-ios-pulse"></i>
-                            <div class="prod-feat-name">Technologia<br>Doppler 24 GHz</div>
-                            <p class="prod-feat-desc">Precyzyjne wykrywanie ruchu z minimalną prędkością detekcji 5 cm/s</p>
+                            <div class="prod-feat-name">Filtracja<br>Ruchu Poprzecznego</div>
+                            <p class="prod-feat-desc">Ignorowanie ruchu równoległego minimalizuje zbędne otwarcia bramy i znacząco redukuje straty ciepła na hali.</p>
                         </div>
                         <div class="prod-feat">
-                            <i class="ion-ios-people-outline"></i>
-                            <div class="prod-feat-name">Rozróżnianie<br>obiektów</div>
-                            <p class="prod-feat-desc">Selektywna detekcja osób i pojazdów z filtrem ruchu równoległego</p>
+                            <i class="ion-ios-analytics-outline"></i>
+                            <div class="prod-feat-name">Precyzja<br>Detekcji</div>
+                            <p class="prod-feat-desc">Niesamowita czułość mikrofali zapewnia skuteczne wykrywanie obiektów poruszających się z prędkością już od 5 cm/s.</p>
+                        </div>
+                        <div class="prod-feat">
+                            <i class="ion-ios-partlysunny-outline"></i>
+                            <div class="prod-feat-name">Odporność<br>Środowiskowa IP65</div>
+                            <p class="prod-feat-desc">Przemysłowa jakość gwarantuje niezakłóconą pracę w skrajnych temperaturach (od -30°C aż do +60°C).</p>
+                        </div>
+                        <div class="prod-feat">
+                            <i class="ion-ios-shuffle"></i>
+                            <div class="prod-feat-name">Dwa kanały<br>sterujące</div>
+                            <p class="prod-feat-desc">Niezależne przypisanie kanałów pozwala np. na częściowe otwarcie dla pieszych i pełne dla wózków widłowych.</p>
                         </div>
                     </div>
                 </div>

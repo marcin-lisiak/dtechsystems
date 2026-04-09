@@ -1,6 +1,6 @@
-﻿<?php
+<?php
 
-$myemail = 'biuro@cezab-distribution.pl';
+$myemail = 'm.lisiak@cezab-distribution.pl';
 
 $name = $_POST['name'];
 $email = $_POST['email'];
