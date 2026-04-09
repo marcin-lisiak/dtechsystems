@@ -1,5 +1,16 @@
 RewriteEngine On
 
+# Wymuszenie polaczenia szyfrowanego HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Wymuszenie adresu bez przedrostka "www" (SEO best practice)
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Gwarancja kodowania ucinajaca bląd "Charset encoding missing"
+AddDefaultCharset UTF-8
+
 # Redirect to remove .html from URL
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
 RewriteRule ^([^.]+)\.html$ /$1 [R=301,L]
