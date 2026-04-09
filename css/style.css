@@ -3953,6 +3953,30 @@ body.brand-home {
   padding: 0 20px;
 }
 
+.brand-nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.brand-nav-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 40px;
+}
+
+.brand-nav-social a {
+  color: #fff;
+  font-size: 19px;
+  opacity: 0.65;
+  transition: all 0.3s ease;
+}
+
+.brand-nav-social a:hover {
+  color: #369ad6;
+  opacity: 1;
+}
+
 .brand-nav-logo {
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
