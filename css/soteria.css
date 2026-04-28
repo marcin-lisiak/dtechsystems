@@ -33,7 +33,7 @@
 .product-header-bg {
     position: absolute;
     inset: 0;
-    background-image: url('../img/Soteria/hero/soteria_main.jpg');
+    background-image: url('../img/Soteria/soteria-main.jpg');
     background-size: cover;
     background-position: center top;
     opacity: 1;
@@ -42,7 +42,7 @@
 .product-header-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.82) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.70) 100%);
 }
 
 .product-header-content {
@@ -55,14 +55,16 @@
 .product-header-tag {
     display: inline-block;
     font-family: 'Oswald', sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.28em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: #369ad6;
-    margin-bottom: 18px;
-    padding: 4px 14px;
-    border: 1px solid rgba(54, 154, 214, 0.4);
+    color: #000;
+    background-color: #369ad6;
+    margin-bottom: 22px;
+    padding: 6px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(54, 154, 214, 0.4);
 }
 
 .product-header h1 {
@@ -87,7 +89,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.85);
     line-height: 1.8;
     max-width: 500px;
     margin: 0 auto 30px;
@@ -118,12 +120,12 @@
     gap: 10px;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.55);
     letter-spacing: 0.04em;
 }
 
 .product-breadcrumb-inner a {
-    color: rgba(255, 255, 255, 0.45);
+    color: rgba(255, 255, 255, 0.65);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -133,7 +135,7 @@
 }
 
 .product-breadcrumb-inner .sep {
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .product-breadcrumb-inner .current {
@@ -166,7 +168,7 @@
    ────────────────────────────────────────────────── */
 .prod-label {
     font-family: 'Oswald', sans-serif;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.28em;
     text-transform: uppercase;
@@ -208,7 +210,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     line-height: 1.9;
-    color: rgba(255, 255, 255, 0.62);
+    color: rgba(255, 255, 255, 0.8);
     text-align: left;
     margin-bottom: 18px;
 }
@@ -231,8 +233,8 @@
 
 .prod-feat {
     padding: 24px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.07);
-    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
     position: relative;
     overflow: hidden;
     transition: border-color 0.35s, background 0.35s;
@@ -280,7 +282,7 @@
 .prod-feat-desc {
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
     text-align: left;
 }
@@ -304,8 +306,8 @@
 
 .prod-hl-card {
     padding: 40px 30px;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    background: rgba(255, 255, 255, 0.015);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.025);
     text-align: center;
     transition: background 0.35s;
     position: relative;
@@ -320,7 +322,7 @@
     font-family: 'Oswald', sans-serif;
     font-size: 100px;
     font-weight: 700;
-    color: rgba(54, 154, 214, 0.04);
+    color: rgba(54, 154, 214, 0.09);
     line-height: 1;
     pointer-events: none;
 }
@@ -331,21 +333,21 @@
 
 .prod-hl-num {
     font-family: 'Oswald', sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.28em;
     text-transform: uppercase;
-    color: rgba(54, 154, 214, 0.55);
-    margin-bottom: 12px;
+    color: rgba(54, 154, 214, 0.75);
+    margin-bottom: 14px;
 }
 
 .prod-hl-sub {
     font-family: 'Oswald', sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.26);
+    color: rgba(255, 255, 255, 0.45);
     margin-bottom: 14px;
 }
 
@@ -370,7 +372,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     line-height: 1.75;
-    color: rgba(255, 255, 255, 0.46);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -408,7 +410,7 @@
 
 .prod-contact-label {
     font-family: 'Oswald', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.24em;
     text-transform: uppercase;
@@ -502,7 +504,7 @@
     padding: 14px 16px;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.5;
     vertical-align: top;
     font-variant-numeric: lining-nums tabular-nums;
@@ -523,11 +525,77 @@
     .prod-spec-table td:first-child {
         width: auto;
     }
+
     .prod-spec-table td {
         display: block;
         padding: 8px 16px;
     }
+
     .prod-spec-table td:first-child {
         padding-bottom: 2px;
     }
+}
+
+/* ──────────────────────────────────────────────────
+   STORE & VIDEO BUTTONS (Shared from radar-capture)
+   ────────────────────────────────────────────────── */
+.store-btns-wrapper {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.store-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fff !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    min-width: 170px;
+    text-align: left;
+}
+
+.store-btn i {
+    font-size: 24px;
+    color: #369ad6;
+}
+
+.store-btn .btn-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.store-btn .btn-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.85;
+    line-height: 1;
+}
+
+.store-btn .btn-name {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.2;
+}
+
+.store-btn:hover {
+    background: #111;
+    border-color: #369ad6;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(54, 154, 214, 0.15);
+}
+
+.video-promo-container {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }

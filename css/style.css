@@ -512,7 +512,7 @@ h2.post-title {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.01em;
   color: #fff;
 }
 
@@ -761,6 +761,7 @@ h4.post-all-heading span {
 }
 
 @media only screen and (max-width: 995px) {
+
   .soteria-gallery,
   .radar-gallery {
     grid-template-columns: repeat(4, 1fr);
@@ -768,6 +769,7 @@ h4.post-all-heading span {
 }
 
 @media only screen and (max-width: 768px) {
+
   .soteria-gallery,
   .radar-gallery {
     grid-template-columns: repeat(2, 1fr);
@@ -794,6 +796,7 @@ h4.post-all-heading span {
 }
 
 @media only screen and (max-width: 995px) {
+
   .soteria-gallery .gallery-item.main,
   .radar-gallery .gallery-item.main {
     grid-column: 1 / -1;
@@ -802,6 +805,7 @@ h4.post-all-heading span {
 }
 
 @media only screen and (max-width: 768px) {
+
   .soteria-gallery .gallery-item.main,
   .radar-gallery .gallery-item.main {
     grid-column: 1 / -1;
@@ -828,7 +832,7 @@ h4.post-all-heading span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -840,7 +844,7 @@ h4.post-all-heading span {
 
 .soteria-gallery .gallery-item:hover .item-shade,
 .radar-gallery .gallery-item:hover .item-shade {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .description {
@@ -3171,7 +3175,7 @@ body.brand-home {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.60) 100%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.45) 100%);
 }
 
 .brand-hero-content {
@@ -3257,7 +3261,7 @@ body.brand-home {
 
 .brand-section-sub {
   font-size: 18px;
-  opacity: 0.7;
+  opacity: 0.8;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -3274,6 +3278,7 @@ body.brand-home {
   position: relative;
   height: 500px;
   border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -3284,7 +3289,8 @@ body.brand-home {
   transform: translateY(35px);
   transition:
     opacity 0.65s ease,
-    transform 0.65s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform 0.65s cubic-bezier(0.165, 0.84, 0.44, 1),
+    border-color 0.4s ease;
 }
 
 .product-card.revealed {
@@ -3294,14 +3300,27 @@ body.brand-home {
 
 .product-card:hover {
   transform: scale(1.02);
+  border-color: rgba(255, 255, 255, 0.12);
+  transition:
+    transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    border-color 0.4s ease;
+}
   transition:
     transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 /* Kaskadowe opóźnienia przy wjeżdżaniu */
-#card-soteria  { transition-delay: 0s; }
-#card-radar    { transition-delay: 0.12s; }
-#card-chronos  { transition-delay: 0.24s; }
+#card-soteria {
+  transition-delay: 0s;
+}
+
+#card-radar {
+  transition-delay: 0.12s;
+}
+
+#card-chronos {
+  transition-delay: 0.24s;
+}
 
 /* Na hover usuwamy opóźnienia, żeby uciec od lagu! */
 #card-soteria:hover,
@@ -3336,7 +3355,13 @@ body.brand-home {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  /* Mniej ponura czerń – delikatny przejrzysty granat wpadający w noc */
+  background: linear-gradient(to bottom, rgba(54, 154, 214, 0.0) 0%, rgba(10, 15, 20, 0.65) 100%);
+  transition: all 0.4s ease;
+}
+
+.product-card:hover .product-card-overlay {
+  background: linear-gradient(to bottom, rgba(54, 154, 214, 0.05) 0%, rgba(10, 15, 20, 0.5) 100%);
 }
 
 .product-card-content {
@@ -3345,13 +3370,22 @@ body.brand-home {
 }
 
 .product-tag {
-  display: inline-block;
+  display: inline-flex;
   font-family: 'Oswald', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
+  /* Zwiększono rozmiar */
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   color: #369ad6;
-  margin-bottom: 10px;
+  background: rgba(54, 154, 214, 0.15);
+  /* Półprzezroczyste tło */
+  border: 1px solid rgba(54, 154, 214, 0.35);
+  /* Cienka lamówka */
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .product-name {
@@ -3365,7 +3399,8 @@ body.brand-home {
 .product-desc {
   font-size: 15px;
   line-height: 1.6;
-  opacity: 0.8;
+  opacity: 0.95;
+  /* Był 0.8 - teraz tekst jest znacznie jaśniejszy */
   margin-bottom: 25px;
   text-align: left;
 }
@@ -3443,7 +3478,7 @@ body.brand-home {
 }
 
 .brand-about-item p {
-  opacity: 0.7;
+  opacity: 0.8;
   font-size: 15px;
 }
 
@@ -3590,7 +3625,7 @@ body.brand-home {
 
 .brand-footer-col ul li a {
   font-size: 14px;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -3615,12 +3650,12 @@ body.brand-home {
 
 .brand-footer-col .footer-contact-item span {
   font-size: 14px;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
   line-height: 1.5;
 }
 
 .brand-footer-col .footer-contact-item a {
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -3653,7 +3688,7 @@ body.brand-home {
 
 .brand-footer-socials a {
   font-size: 20px;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
   transition: color 0.3s ease;
 }
 
@@ -3713,22 +3748,36 @@ body.brand-home {
 /* ============================================
    HERO ENTRY ANIMATION
    ============================================ */
-.brand-hero-content > * {
+.brand-hero-content>* {
   opacity: 0;
   transform: translateY(24px);
 }
 
-.brand-hero-content.animated > * {
+.brand-hero-content.animated>* {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.brand-hero-content.animated > *:nth-child(1) { transition-delay: 0.2s; }
-.brand-hero-content.animated > *:nth-child(2) { transition-delay: 0.4s; }
-.brand-hero-content.animated > *:nth-child(3) { transition-delay: 0.6s; }
-.brand-hero-content.animated > *:nth-child(4) { transition-delay: 0.8s; }
-.brand-hero-content.animated > *:nth-child(5) { transition-delay: 1.0s; }
+.brand-hero-content.animated>*:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.brand-hero-content.animated>*:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.brand-hero-content.animated>*:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.brand-hero-content.animated>*:nth-child(4) {
+  transition-delay: 0.8s;
+}
+
+.brand-hero-content.animated>*:nth-child(5) {
+  transition-delay: 1.0s;
+}
 
 /* ============================================
    NAV SCROLLSPY – ACTIVE LINK
@@ -3745,8 +3794,8 @@ body.brand-home {
 .brand-stats {
   background: #050505;
   padding: 100px 20px;
-  border-top: 1px solid rgba(255,255,255,0.04);
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .brand-stats-grid {
@@ -3769,10 +3818,21 @@ body.brand-home {
   transform: translateY(0);
 }
 
-.brand-stat-item:nth-child(1) { transition-delay: 0s; }
-.brand-stat-item:nth-child(2) { transition-delay: 0.15s; }
-.brand-stat-item:nth-child(3) { transition-delay: 0.3s; }
-.brand-stat-item:nth-child(4) { transition-delay: 0.45s; }
+.brand-stat-item:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.brand-stat-item:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.brand-stat-item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.brand-stat-item:nth-child(4) {
+  transition-delay: 0.45s;
+}
 
 .brand-stat-number {
   font-family: 'Oswald', sans-serif;
@@ -3793,7 +3853,7 @@ body.brand-home {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 @media only screen and (max-width: 768px) {
@@ -3814,7 +3874,7 @@ body.brand-home {
   display: inline-block;
   width: 16px;
   height: 16px;
-  border: 2px solid rgba(255,255,255,0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   border-top-color: #fff;
   border-radius: 50%;
   animation: spin 0.7s linear infinite;
@@ -3823,7 +3883,9 @@ body.brand-home {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* ============================================
@@ -3842,7 +3904,7 @@ body.brand-home {
   z-index: 9999;
   transform: translateY(100%);
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 -8px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.5);
 }
 
 .cookie-banner.visible {
@@ -3866,7 +3928,7 @@ body.brand-home {
 .cookie-banner-text p {
   text-align: left;
   font-size: 13px;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65);
   margin: 0;
   line-height: 1.7;
 }
@@ -3909,13 +3971,13 @@ body.brand-home {
 
 .cookie-btn-reject {
   background: transparent;
-  color: rgba(255,255,255,0.5);
-  border-color: rgba(255,255,255,0.15);
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .cookie-btn-reject:hover {
   color: #fff;
-  border-color: rgba(255,255,255,0.4);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 @media only screen and (max-width: 600px) {
@@ -4158,7 +4220,10 @@ h3,
    ===================================================== */
 
 /* Hero tło – osobny div z efektem powolnego zoomu */
-.brand-hero { background: #000 !important; overflow: hidden; }
+.brand-hero {
+  background: #000 !important;
+  overflow: hidden;
+}
 
 .brand-hero-bg,
 .brand-hero-bg.vegas-container,
@@ -4220,4 +4285,38 @@ body .brand-hero-bg.vegas-container {
   font-size: 20px;
   color: #fff;
   line-height: 1;
+}
+
+/* ──────────────────────────────────────────────────
+   PRODUCT INTRO LISTS (.prod-features-list)
+   ────────────────────────────────────────────────── */
+.prod-features-list {
+  list-style: none;
+  padding-left: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  line-height: 1.9;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.prod-features-list li {
+  margin-bottom: 10px;
+  padding-left: 24px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.prod-features-list li:hover {
+  transform: translateX(5px);
+}
+
+.prod-features-list li i {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  color: #369ad6;
+  font-size: 14px;
+  opacity: 0.9;
 }
